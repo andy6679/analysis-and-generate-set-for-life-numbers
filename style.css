@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+}
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ddd;
+    padding: 10px 0;
+}
+
+.tablink {
+    flex: 1;
+    padding: 14px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.tablink:hover {
+    background-color: #bbb;
+}
+
+.tablink:focus {
+    outline: none;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td {
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Inputs */
+input[type="file"],
+input[type="number"],
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+}
+
+input[type="number"] {
+    width: 50%;
+    display: inline-block;
+}
+
+select {
+    width: auto;
+}
+
+/* Output Results */
+#results {
+    margin-top: 20px;
+}
+
+#suggestionResult,
+#combinationsResult,
+#probabilityResult {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Style for the "Disclaimer" tab */
+#DisclaimerTab {
+    background-color: #f9f9f9;
+    font-size: 16px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tablink {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tabcontent {
+        padding: 15px;
+    }
+}
